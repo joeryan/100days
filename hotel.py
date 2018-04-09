@@ -19,6 +19,6 @@ def test_check_in_a_guest():
 
 def test_check_out_a_guest():
   hotel = Hotel()
-  hotel.check_in('Bob Barker')
-  hotel.check_out('Bob Barker')
-  assert(('Bob Barker' in hotel.guests()) == False)
+  hotel.check_in('Bob Dylan')
+  hotel.check_out('Bob Dylan')
+  assert(('Bob Dylan' in hotel.guests()) == False)
