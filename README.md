@@ -5,4 +5,9 @@ Larger projects may get their own repositories, but there will likely be multipl
 exploratory projects during the period.
 
 ### projects included
+#### Day 1 - 3:
 - simple hotel guest tracking class to practice pytest.  Based on Jason Swett's [Ruby Testing Micro-Course](https://www.codewithjason.com/ruby-testing-micro-course-lesson-1/)
+#### Day 4-5: 
+- work in repo network-scripts
+- Cisco 8821 speed dial XML file generator
+- SCRT Session data extractor (extract hostnames and addresses from SCRT sessions folder structure
