@@ -19,3 +19,11 @@ Q. Quit program
 
 Enter choice: """
   assert(cybrary.menu_generator() == expected_menu)
+
+def test_check_even_with_an_odd_number_returns_false():
+  assert(cybrary.check_even(3) == False)
+
+def test_check_even_with_an_even_number_returns_true():
+  assert(cybrary.check_even(12) == True)
+
+
