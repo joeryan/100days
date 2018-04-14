@@ -11,3 +11,5 @@ exploratory projects during the period.
 - work in repo network-scripts
 - Cisco 8821 speed dial XML file generator
 - SCRT Session data extractor (extract hostnames and addresses from SCRT sessions folder structure
+#### Day 6:
+- created calc.py with simple calculator functions that also operate on dice
