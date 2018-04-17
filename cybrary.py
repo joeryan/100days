@@ -4,6 +4,7 @@
 # Python for Security Professionals at www.cybrary.it/course/python
 # used to improve pytest understanding and overall python knowledge
 import platform
+import numbers
 
 # display a menu of options to choose from
 def menu_generator():
@@ -11,7 +12,7 @@ def menu_generator():
 """Please select from the following options:
 
 1. Determine if an input value is odd or even
-2. Return the sum of two input vaules
+2. Return the sum of a list of input vaules
 3. Return how many of an input list of integers are even
 4. Return an input string reversed
 5. Determine if an input string is a palindrome
@@ -42,8 +43,25 @@ def check_odd_or_even_input():
 
 
 # 2. return the sum of two input values
-def sum_numbers():
-  pass
+def sum_numbers(nums):
+  accum = 0
+  for num in nums:
+    accum += num
+  return accum
+
+def get_sum_of_input_numbers():
+  nums = input("Type a list of numbers separated by a space, end the list with Enter: ")
+  num_list = []  
+  nums = nums.split(' ')
+  for num in nums:
+    try:
+      num_list.append(int(num))
+    except ValueError:
+      try:
+        num_list.append(float(num))
+      except ValueError:
+        print("Error: input {0} is not a valid number".format(num))
+  print("The sum of the numbers is {0}".format(sum_numbers(num_list)))
 
 # 3. given a list of integers, determine how many are even
 def count_even_numbers():
@@ -77,7 +95,7 @@ def invalid_selection():
 
 choices = {
   '1': check_odd_or_even_input,
-  '2': sum_numbers,
+  '2': get_sum_of_input_numbers,
   '3': count_even_numbers,
   '4': reverse_string,
   '5': check_input_for_palindrome,
