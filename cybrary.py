@@ -81,12 +81,26 @@ def count_even_numbers_in_list():
   print(count_even_numbers(nums))
 
 # 4. answer the input string backwards
-def reverse_string():
-  pass
+def reverse_string(input_string):
+  if len(input_string) > 0:
+    input_string =  ''.join(reversed(input_string))
+  return input_string
+
+def print_input_string_reversed():
+  input_string = input("Type a string to reverse.  Press Enter when finished. ")
+  output_string = reverse_string(input_string)
+  print(output_string)
 
 # 5. determine if input string is a palindrome
 def check_input_for_palindrome():
-  pass
+  word = input("Type a word to check if it is a palindrome: ")
+  if is_palindrome(word):
+    print("It is definitely a palindrome!")
+  else:
+    print("Sorry, that word is not a palindrome.")
+
+def is_palindrome(input_string):
+  return input_string.lower() == reverse_string(input_string.lower())
 
 # utility functions
 def prompt_to_clear_screen():
@@ -110,7 +124,7 @@ choices = {
   '1': check_odd_or_even_input,
   '2': get_sum_of_input_numbers,
   '3': count_even_numbers_in_list,
-  '4': reverse_string,
+  '4': print_input_string_reversed,
   '5': check_input_for_palindrome,
   'q': noop
 }

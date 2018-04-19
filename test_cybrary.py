@@ -45,3 +45,18 @@ def test_count_even_numbers_in_one_item_input_list():
 def test_count_even_numbers_in_multiple_item_input_list():
   assert(cybrary.count_even_numbers([3,4,8,7,230,233]) == 3)
 
+def test_reverse_string_zero_length():
+  assert(cybrary.reverse_string('') == '')
+
+def test_reverse_string_fixed_length():
+  assert(cybrary.reverse_string('Test') == 'tseT')
+
+def test_ispalindrome_on_known_palindrome():
+  assert(cybrary.is_palindrome("toot")) == True
+
+def test_ispalindrome_on_palindrome_with_caps():
+  assert(cybrary.is_palindrome("Dud")) == True
+
+def test_is_palindrome_on_non_palindrome():
+  assert(cybrary.is_palindrome("Beer")) == False
+
