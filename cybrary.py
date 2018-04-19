@@ -64,8 +64,21 @@ def get_sum_of_input_numbers():
   print("The sum of the numbers is {0}".format(sum_numbers(num_list)))
 
 # 3. given a list of integers, determine how many are even
-def count_even_numbers():
-  pass
+def count_even_numbers(nums):
+  count = 0
+  for num in nums:
+    if num % 2 ==0:
+      count += 1
+  return count
+
+def count_even_numbers_in_list():
+  nums = []
+  num_list = input("Type a list of inegers separated by a space.  Press Enter when done\n> ")
+  num_list = list(num_list.split(' '))
+  for num in num_list:
+    if len(num) > 0:
+      nums.append(int(num.strip()))
+  print(count_even_numbers(nums))
 
 # 4. answer the input string backwards
 def reverse_string():
@@ -96,7 +109,7 @@ def invalid_selection():
 choices = {
   '1': check_odd_or_even_input,
   '2': get_sum_of_input_numbers,
-  '3': count_even_numbers,
+  '3': count_even_numbers_in_list,
   '4': reverse_string,
   '5': check_input_for_palindrome,
   'q': noop

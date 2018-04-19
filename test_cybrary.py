@@ -35,5 +35,13 @@ def test_check_sum_of_two_numbers():
 def test_check_sum_of_three_numbers():
   assert(cybrary.sum_numbers([3,5.0,4.2]) == 12.2)
 
+def test_count_even_numbers_in_empty_list():
+  assert(cybrary.count_even_numbers([]) == 0)
 
+def test_count_even_numbers_in_one_item_input_list():
+  assert(cybrary.count_even_numbers([3]) == 0)
+  assert(cybrary.count_even_numbers([2]) == 1)
+
+def test_count_even_numbers_in_multiple_item_input_list():
+  assert(cybrary.count_even_numbers([3,4,8,7,230,233]) == 3)
 
