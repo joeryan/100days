@@ -13,3 +13,7 @@ exploratory projects during the period.
 - SCRT Session data extractor (extract hostnames and addresses from SCRT sessions folder structure
 #### Day 6:
 - created calc.py with simple calculator functions that also operate on dice
+#### Day 7-10:
+- simple menu driven program based on cybrary.it python for securty professionals course (journeyman section)
+- completed tests for functionality and refactoring practice
+
