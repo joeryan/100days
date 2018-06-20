@@ -16,4 +16,6 @@ exploratory projects during the period.
 #### Day 7-10:
 - simple menu driven program based on cybrary.it python for securty professionals course (journeyman section)
 - completed tests for functionality and refactoring practice
-
+#### Day 11 - ?:
+- jumpstart wih 10 apps in separate repo (jumpstart-10apps)
+  - hello_world.py
